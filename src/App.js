@@ -50,6 +50,7 @@ const Career = lazy(() => import("./components/Career"));
 const ContactUs = lazy(() => import("./components/ContactUs"));
 const AboutPage = lazy(() => import("./components/AboutUs"));
 const NotFound = lazy(() => import("./components/NotFound"));
+const ServicesPage = lazy(() => import("./components/Services"));
 
 // Loading component
 const PageLoader = () => (
@@ -103,6 +104,7 @@ function App() {
                   {/* Other Routes */}
                   <Route path="careers" element={<Career />} />
                   <Route path="contact" element={<ContactUs />} />
+                  <Route path="services" element={<ServicesPage />} />
                 </Route>
 
                 {/* Redirects for old routes */}

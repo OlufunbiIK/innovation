@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import home from "../../assets/images/Low angle greyscale of a building with modern brutalist architecture under the sunlight.svg";
-import arrow from "../../assets/images/Arrow 1.svg";
-import logo from "../../assets/images/Frame 8 (2).svg";
+import home from "../assets/images/Low angle greyscale of a building with modern brutalist architecture under the sunlight.svg";
+import arrow from "../assets/images/Arrow 1.svg";
+import logo from "../assets/images/Frame 8 (2).svg";
 import { FaBars, FaTimes, FaPlay, FaPhone, FaEnvelope } from "react-icons/fa";
 
 const HomeHero = () => {
@@ -261,7 +261,7 @@ const HomeHero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 2.0 }}
                 className="text-blue-400"
               >
                 {heroTexts[currentTextIndex]}
