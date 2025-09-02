@@ -1,4 +1,3 @@
-import React from "react";
 import Home from "./Home";
 import AboutUs from "../components/AboutUs";
 import UnderAbout from "../components/UnderAbout";
@@ -9,16 +8,16 @@ import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 
 export default function LandingPage() {
-	return (
-		<div className="">
-			<Home />
-			<AboutUs />
-			<UnderAbout />
-			<RecentProject />
-			<Career />
-			<Blog />
-			<ContactUs />
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="">
+      <Home />
+      <AboutUs />
+      <UnderAbout />
+      <RecentProject />
+      <Career />
+      <Blog />
+      <ContactUs />
+      <Footer />
+    </div>
+  );
 }
