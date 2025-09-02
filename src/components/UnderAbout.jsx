@@ -9,6 +9,7 @@ import {
   FaStar,
   FaQuoteLeft,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const image1 =
   "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80"; // Modern architectural design workspace
@@ -18,6 +19,7 @@ const image3 =
   "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"; // Construction project management
 
 const UnderAbout = () => {
+  const navigate = useNavigate();
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
   const ref = useRef(null);
@@ -368,6 +370,12 @@ const UnderAbout = () => {
                 with precision, creativity, and care.
               </p>
               <motion.button
+                onClick={() => {
+                  // Handle button click
+                  console.log("Button clicked");
+                  // Add your logic here
+                  navigate("/contact");
+                }}
                 className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}

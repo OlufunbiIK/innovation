@@ -33,7 +33,7 @@ const HomeHero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTextIndex((prev) => (prev + 1) % heroTexts.length);
-    }, 3000);
+    }, 6000); // Increased to 6000ms for better readability
     return () => clearInterval(interval);
   }, [heroTexts.length]);
 
@@ -90,7 +90,7 @@ const HomeHero = () => {
             <img
               src={logo}
               alt="INNOVAT Logo"
-              className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
+              className="w-12 h-12 md:w-16 md:h-16 lg:w-24 lg:h-24"
             />
           </Link>
         </motion.div>
@@ -261,7 +261,7 @@ const HomeHero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 2.0 }}
+                transition={{ duration: 0.6 }}
                 className="text-blue-400"
               >
                 {heroTexts[currentTextIndex]}
