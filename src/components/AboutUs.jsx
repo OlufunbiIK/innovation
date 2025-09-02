@@ -273,13 +273,6 @@ const AboutUs = () => {
                 whileHover={{ y: -10, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="aspect-[3/4] bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
-                  <p className="text-gray-600 text-center px-4">
-                    Modern Architecture
-                    <br />
-                    Building Image 1
-                  </p>
-                </div>
                 {/* Uncomment when you have the actual image */}
                 <img
                   src={secondbuilding}
@@ -295,13 +288,6 @@ const AboutUs = () => {
                 whileHover={{ y: -10, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="aspect-[3/4] bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center">
-                  <p className="text-white text-center px-4">
-                    Concrete Structure
-                    <br />
-                    Building Image 2
-                  </p>
-                </div>
                 {/* Uncomment when you have the actual image */}
                 <img
                   src={building}
